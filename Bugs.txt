@@ -1,0 +1,39 @@
+Opción "Guardar" No Realiza Ninguna Acción
+
+Descripcion: El botón "Guardar" no realiza ninguna acción al ser seleccionado en el formulario de creación de clientes.
+
+Entorno:
+
+    Ambiente: QA Staging
+    URL: https://qastaging.siigo.com/#/login
+    Navegador: Chrome 120.0.6099.129 / Firefox 121.0
+    SO: Windows 10 / 11
+
+Precondiciones:
+
+    El usuario debe estar autenticado en la aplicación. Debe haber ingresado datos válidos en todos los campos obligatorios del 
+    formulario de creación de clientes.
+
+Pasos para Reproducir:
+
+    1. Iniciar sesión en la aplicación con credenciales válidas.
+    2. Navegar a la sección Clientes mediante Botón "+Crear" → Opción "Clientes".
+    3. Completar los campos obligatorios del formulario:
+        Nombre: "Nametest"
+        Apellido: "Lastnametest"
+        Identificación: "12345678"
+        Tipo de identificación: "Cédula de ciudadanía"
+    4. Hacer clic en el botón "Guardar".
+
+Resultado Esperado:
+
+    - El sistema debería guardar la información y mostrar un mensaje de éxito: "Cliente creado exitosamente".
+    - El cliente debería aparecer en la lista de clientes.
+
+Resultado Actual:
+
+    - El botón "Guardar" no responde cuando es seleccionado.
+    - No se muestra ningún mensaje de error o advertencia en la interfaz.
+    - No se envía ninguna solicitud al backend (verificado en la consola de desarrollo).
+
+Ver evidencia adjunta en el correo de entrega

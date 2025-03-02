@@ -1,0 +1,169 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "creación-de-cliente;inicio-de-sesión-exitoso",
+        "keyword": "Escenario",
+        "line": 5,
+        "name": "Inicio de sesión exitoso",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 158437400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que el usuario navega a la página de inicio de sesión",
+            "match": {
+              "location": "features\\step_definitions\\crear_cliente.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 882040499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 7,
+            "name": "el usuario ingresa el correo \"retoautomationsiigo@yopmail.com\"",
+            "match": {
+              "location": "features\\step_definitions\\crear_cliente.steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8219824499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 8,
+            "name": "el usuario ingresa la contraseña \"T4b4ck0ff1c3P455w0rd658*\"",
+            "match": {
+              "location": "features\\step_definitions\\crear_cliente.steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82549199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 9,
+            "name": "el usuario hace clic en el botón \"Continuar\"",
+            "match": {
+              "location": "features\\step_definitions\\crear_cliente.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147305100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 10,
+            "name": "el usuario debería ser redirigido al dashboard",
+            "match": {
+              "location": "features\\step_definitions\\crear_cliente.steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30837132600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "creación-de-cliente;navegar-al-formulario-de-creación-de-clientes",
+        "keyword": "Escenario",
+        "line": 12,
+        "name": "Navegar al formulario de creación de clientes",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45219700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 13,
+            "name": "que el usuario está en el dashboard",
+            "match": {
+              "location": "features\\step_definitions\\crear_cliente.steps.js:58"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30023559399,
+              "error_message": "page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Te damos la bienvenida') to be visible\u001b[22m\n\n    at World.<anonymous> (C:\\Users\\USER\\OneDrive\\Documentos\\playwright-siigo\\features\\step_definitions\\crear_cliente.steps.js:61:19)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 14,
+            "name": "el usuario hace clic en el botón \"Crear\"",
+            "match": {
+              "location": "features\\step_definitions\\crear_cliente.steps.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 15,
+            "name": "el usuario hace clic en el enlace \"Clientes\"",
+            "match": {
+              "location": "features\\step_definitions\\crear_cliente.steps.js:65"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 16,
+            "name": "debería mostrarse el formulario de creación de clientes",
+            "match": {
+              "location": "features\\step_definitions\\crear_cliente.steps.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "creación-de-cliente",
+    "line": 3,
+    "keyword": "Característica",
+    "name": "Creación de Cliente",
+    "tags": [],
+    "uri": "features\\crear_cliente.feature"
+  }
+]
